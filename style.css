@@ -1,0 +1,213 @@
+/* navbar */
+.navbar {
+    height: 90px;
+}
+
+.navbar .attribute {
+    margin-left: 31px;
+    font-size: 30px;
+}
+
+.navbar .attribute:hover {
+    margin-left: 31px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.attribute::first-letter {
+    color: red;
+}
+
+/* media query for navbar */
+@media screen and (max-width: 992px) {
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar #display {
+        display: none;
+    }
+
+    .navbar .home-1 {
+        margin-top: 25px;
+
+
+    }
+
+    .navbar .background-color {
+        background-color: white;
+        height: 600px;
+    }
+}
+
+.navbar .font-change {
+    font-size: 19px;
+}
+
+.navbar .font-change:hover {
+    font-size: 19px;
+    text-decoration: underline;
+}
+
+/* main div */
+
+/* responsibe container*/
+.container .row {
+    margin-top: 40px;
+    width: 100%;
+    /* height: 300px; */
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .box-1 {
+    width: 332px;
+    height: 190px;
+    padding: 12px;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 5px rgb(196, 195, 195);
+
+}
+
+.container .line {
+    width: 234px;
+    height: 2px;
+    border: 1px solid red;
+    background-color: red;
+    margin-left: 22px;
+}
+
+.container .details {
+
+    display: flex;
+    align-items: center;
+    padding: 14px;
+
+}
+
+.container .add {
+    padding-left: 19px;
+}
+
+.container .rounded-div {
+
+    content: "";
+    height: 60px;
+    background-color: white;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 7px 5px rgb(196, 195, 195);
+
+}
+
+.container .rounded-div::before {
+    content: "\f2c2";
+    /* icon unicode*/
+    font-family: fontAwesome;
+    color: red;
+    font-size: 30px;
+
+}
+
+.container .update-div-1::before {
+    content: "\f674";
+    /* icon unicode*/
+    font-family: fontAwesome;
+    color: red;
+    font-size: 30px;
+
+}
+
+.container .update-div-2::before {
+    content: "\f3c5";
+    /* icon unicode*/
+    font-family: fontAwesome;
+    color: red;
+    font-size: 30px;
+
+}
+
+.container span {
+    font-size: 20px;
+    font-variant: small-caps;
+    font-family: sans-serif;
+}
+
+/* media query for addresses */
+@media screen and (max-width: 992px) {
+    .container .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .box-1 {
+        margin: 12px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 993px) {
+    .container .row {
+        overflow: hidden;
+        display: flex;
+
+
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .container .box-1 {
+        margin: 12px;
+        width: 500px;
+    }
+}
+
+/* form */
+.container-box {
+   
+    margin-top: 45px;
+    background-color:whitesmoke;
+    box-shadow: 3px 3px 8px 10px whitesmoke;
+}
+@media screen and (max-width: 992px){
+    .container .container-1{
+        height: 486px;
+    }
+    .container .container-1 .div-box{
+        display: none;
+    }
+    .container .container-1 .btn{
+        left: 124px;
+        bottom: 21px;
+        position: relative;
+    }
+}
+.container-box::first-letter{
+    color: red;
+}
+
+.container .container-1 {
+   
+    background-image: linear-gradient(to right top, #040404, #1e1322, #3e1632, #631234, #841228);
+    color: white;
+    margin-left: 1px;
+}
+.container-box-1{
+    margin-top: 45px;
+    
+   
+}
+footer{
+    background-image: linear-gradient(to right top, #ab2815, #941e43, #692d56, #3e324d, #2b2c2f);
+    margin-top: 35px;
+}
+
+/* finally we will get our website on chrome */
